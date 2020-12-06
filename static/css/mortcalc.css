@@ -1,0 +1,108 @@
+table.dataframe, .dataframe th, .dataframe td {
+  border: none;
+  border-bottom: 1px solid #7da7d8;
+  border-collapse: collapse;
+  text-align:center;
+  padding: 10px;
+  margin-bottom: 40px;
+  font-size: 0.9em;
+  width:auto;
+  margin:0 auto;
+}
+
+.calculator th {
+    background-color: #7da7d8;
+    color: white;
+}
+
+tr:hover            { background-color: #dcecff;}format
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+body {
+	background-color: #fff;
+}
+
+div.calc-container .form-style h2 {
+	background: linear-gradient(to right bottom, #7da7d8 5%, #85b3e7 100%);
+	text-transform: uppercase;
+	font-family: "Open Sans Condensed", sans-serif;
+	color: #000;
+	font-size: 20px;
+	font-weight: 200;
+	padding: 20px;
+	margin-bottom: 3%;
+	text-align: center;
+}
+
+input,
+select,
+label,
+p,
+td {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode",
+		Geneva, Verdana, sans-serif;
+	font-size: 14px;
+	max-width: 100%;
+	text-align: center;
+	color: rgb(92, 91, 91);
+}
+
+.form-style,
+table {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode",
+		Geneva, Verdana, sans-serif;
+	background: #fff;
+	text-align: center;
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.22);
+	-moz-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.22);
+	-webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.22);
+}
+
+.form-style input[type="text"],
+.form-style input[type="number"],
+.form-style label .form-style textarea,
+.form-style select,
+.form-style option,
+div.lenders-container {
+	outline: none;
+	display: block;
+	width: 100%;
+	padding: 10px;
+	border: none;
+	border-bottom: 1px solid #ddd;
+	background: transparent;
+	margin-bottom: 30px;
+	font-family: "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+		sans-serif;
+	font-size: 14px;
+	text-align: center;
+	height: 45px;
+}
+
+.form-style input[type="button"],
+.form-style input[type="submit"] {
+	-moz-box-shadow: inset 0px 1px 0px 0px #a0a0a0;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #a0a0a0;
+	background-color: #7da7d8;
+	border: 1px solid #fff;
+	color: #000;
+	font-family: "Open Sans Condensed", sans-serif;
+	font-size: 16px;
+	padding: .50rem 3rem;
+	text-decoration: none;
+	letter-spacing: 0.2rem;
+	text-transform: uppercase;
+	border-radius: 30px;
+}
+
+@media screen and (max-width: 375px) {
+	.form-style {
+		width: 100%;
+	}

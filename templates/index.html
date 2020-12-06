@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mortgage Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="favicon-16x16" href="imgs/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mortcalc.css') }}" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+<div class="container col-lg-4 col-sm-6 col-md-4 col-lg-3 shadow-lg p-2 calc-container text-center">
+    <form method="POST" class="form-style">
+
+        {{ form.csrf_token }}
+        <h2 id="commission-form-heading" class="heading">Mortgage Calculator</h2>
+
+        <label>
+            {{ form.homeprice.label(class="form-control-label") }}
+            {{ form.homeprice(placeholder='$', class="form-control") }}
+        </label>
+
+        <label>
+            {{ form.downpayment.label }}
+            {{ form.downpayment(placeholder='$', class="form-control") }}
+        </label>
+
+        <label>
+            {{ form.interestrate.label }}
+            {{ form.interestrate(placeholder='%', class="form-control") }}
+        </label>
+
+        <label>
+            {{ form.taxes.label }}
+            {{ form.taxes(placeholder='$', class="form-control") }}
+        </label>
+
+        <br>
+
+        {{ form.submit }}
+
+        <br>
+        <br>
+        <table class="table">
+            <tbody>
+                <tr>
+                    <td><label>Principal & Interest</label></td>
+                    <td><label>Taxes</label></td>
+                    <td><label>Monthly Payment</label></td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td><label>{{ "$%.2f"|format(prin_int) }}</label></td>
+                    <td><label>{{ "$%.2f"|format(tax) }}</label></td>
+                    <td><label>{{ "$%.2f"|format(pmt) }}</label></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+</div>
+
+    </body>
+
+</html>
