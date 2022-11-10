@@ -1,6 +1,5 @@
-# Mortgage Calculator
+# Mortgage Calculator [![Made with python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://github.com/BlackCursive/flask_weather_app)
 Flask Single Page - Mortgage Calculator
-[![Made with python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://github.com/BlackCursive/flask_weather_app)
 
 > Numpy
 
